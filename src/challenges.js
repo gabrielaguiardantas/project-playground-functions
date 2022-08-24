@@ -56,10 +56,23 @@ function catAndMouse(mouse, cat1, cat2) {
   } return 'cat1';
 }
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(numbersarray2) {
   // seu código aqui
+  let arrayFizzBuzz = [];
+  for (let index1 = 0; index1 < numbersarray2.length; index1 += 1) {
+    if (numbersarray2[index1] % 3 === 0 && numbersarray2[index1] % 5 !== 0) {
+      arrayFizzBuzz.push('fizz');
+    }
+    if (numbersarray2[index1] % 5 === 0 && numbersarray2[index1] % 3 !== 0) {
+      arrayFizzBuzz.push('buzz');
+    } if (numbersarray2[index1] % 3 === 0 && numbersarray2[index1] % 5 === 0) {
+      arrayFizzBuzz.push('fizzBuzz');
+    } else {
+      arrayFizzBuzz.push('bug!');
+    }
+    return arrayFizzBuzz;
+  }
 }
-
 // Desafio 9
 function encode() {
   // seu código aqui
@@ -69,8 +82,15 @@ function decode() {
 }
 
 // Desafio 10
-function techList() {
+function techList(array2, string1) {
   // seu código aqui
+  let arrayObject = [];
+  for (let index2 = 0; index2 < array2.length; index2 += 1) {
+    arrayObject.push = {
+      tech: array2[index2],
+      name: string1,
+    };
+  } return arrayObject;
 }
 
 module.exports = {
