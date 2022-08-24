@@ -30,12 +30,18 @@ function footballPoints(wins, ties) {
   // seu código aqui
   let Totalpoints = 3 * wins + ties;
   return Totalpoints;
-
 }
 
 // Desafio 6
-function highestCount() {
+function highestCount(numbersarray) {
   // seu código aqui
+  const highestnumber = Math.max(...numbersarray);
+  let highestCounter = 0;
+  for (let index = 0; index < numbersarray.length; index += 1) {
+    if (highestnumber === numbersarray[index]) {
+      highestCounter += 1;
+    }
+  } return highestCounter;
 }
 
 // Desafio 7
