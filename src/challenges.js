@@ -89,8 +89,7 @@ function encode(encString) {
     } else {
       encodedString.push(encString[index2]);
     }
-  }
-  let encodedString2 = encodedString.join(''); 
+  } let encodedString2 = encodedString.join('');
   return encodedString2;
 }
 
