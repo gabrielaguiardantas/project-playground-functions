@@ -60,18 +60,16 @@ function fizzBuzz(numbersarray2) {
   // seu código aqui
   let arrayFizzBuzz = [];
   for (let index1 = 0; index1 < numbersarray2.length; index1 += 1) {
-    if (numbersarray2[index1] % 3 === 0 && numbersarray2[index1] % 5 !== 0) {
-      arrayFizzBuzz.push('fizz');
-    }
-    if (numbersarray2[index1] % 5 === 0 && numbersarray2[index1] % 3 !== 0) {
-      arrayFizzBuzz.push('buzz');
-    } if (numbersarray2[index1] % 3 === 0 && numbersarray2[index1] % 5 === 0) {
+    if (numbersarray2[index1] % 3 === 0 && numbersarray2[index1] % 5 === 0) {
       arrayFizzBuzz.push('fizzBuzz');
+    } else if (numbersarray2[index1] % 3 === 0 && numbersarray2[index1] % 5 !== 0) {
+      arrayFizzBuzz.push('fizz');
+    } else if (numbersarray2[index1] % 5 === 0 && numbersarray2[index1] % 3 !== 0) {
+      arrayFizzBuzz.push('buzz');
     } else {
       arrayFizzBuzz.push('bug!');
     }
-    return arrayFizzBuzz;
-  }
+  } return arrayFizzBuzz;
 }
 // Desafio 9
 function encode() {
