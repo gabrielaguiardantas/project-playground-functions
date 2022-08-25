@@ -115,10 +115,15 @@ function decode(decString) {
 }
 
 // Desafio 10
-function techList() {
+function techList(arrayTech, stringTech) {
   // seu código aqui
-}
-
+  for(let index4 = 0; index4 < arrayTech.length; index4 += 1) {
+    let objTech = {
+      tech: arrayTech[index4],
+      name: stringTech
+    }; return objTech;
+  } 
+  }
 module.exports = {
   calcArea,
   catAndMouse,
