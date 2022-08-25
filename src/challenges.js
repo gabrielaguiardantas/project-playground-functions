@@ -124,7 +124,7 @@ function techList(arrayTech, stringTech) {
   if (arrayTech.length === 0) {
     return 'Vazio!';
   } { for (let index4 = 0; index4 < arrayTech.length; index4 += 1) {
-    obsTech.tech[[arrayTech[index4]]];
+    obsTech += 
     } return obsTech;
   } ;
 }
