@@ -93,8 +93,25 @@ function encode(encString) {
   return encodedString2;
 }
 
-function decode() {
+function decode(decString) {
   // seu código aqui
+  let decodedString = [];
+  for (let index3 = 0; index3 < decString.length; index3 += 1) {
+    if (decString[index3] === '1') {
+      decodedString.push('a');
+    } else if (decString[index3] === '2') {
+      decodedString.push('e');
+    } else if (decString[index3] === '3') {
+      decodedString.push('i');
+    } else if (decString[index3] === '4') {
+      decodedString.push('o');
+    } else if (decString[index3] === '5') {
+      decodedString.push('u');
+    } else {
+      decodedString.push(decString[index3]);
+    }
+  } let decodedString2 = decodedString.join('');
+  return decodedString2;
 }
 
 // Desafio 10
