@@ -72,23 +72,35 @@ function fizzBuzz(numbersarray2) {
   } return arrayFizzBuzz;
 }
 // Desafio 9
-function encode() {
+function encode(encString) {
   // seu código aqui
+  let encodedString = [];
+  for (let index2 = 0; index2 < encString.length; index2 += 1) {
+    if (encString[index2] === 'a') {
+      encodedString.push('1');
+    } else if (encString[index2] === 'e') {
+      encodedString.push('2');
+    } else if (encString[index2] === 'i') {
+      encodedString.push('3');
+    } else if (encString[index2] === 'o') {
+      encodedString.push('4');
+    } else if (encString[index2] === 'u') {
+      encodedString.push('5');
+    } else {
+      encodedString.push(encString[index2]);
+    }
+  }
+  let encodedString2 = encodedString.join(''); 
+  return encodedString2;
 }
+
 function decode() {
   // seu código aqui
 }
 
 // Desafio 10
-function techList(array2, string1) {
+function techList() {
   // seu código aqui
-  let arrayObject = [];
-  for (let index2 = 0; index2 < array2.length; index2 += 1) {
-    arrayObject.push = {
-      tech: array2[index2],
-      name: string1,
-    };
-  } return arrayObject;
 }
 
 module.exports = {
