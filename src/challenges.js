@@ -117,16 +117,17 @@ function decode(decString) {
 // Desafio 10
 function techList(arrayTech, stringTech) {
   // seu código aqui
-  let objTech = {
-    tech: '',
-    name: '',
-  }; let obsTech = [];
+  let obsTech = arrayTech.sort();
+  let obsTech2 = [];
   if (arrayTech.length === 0) {
     return 'Vazio!';
-  } { for (let index4 = 0; index4 < arrayTech.length; index4 += 1) {
-    obsTech += 
-    } return obsTech;
-  } ;
+  }
+  for (let index4 = 0; index4 < obsTech.length; index4 += 1) {
+    obsTech2.push({
+      tech: obsTech[index4],
+      name: stringTech,
+    });
+  } return obsTech2;
 }
 
 module.exports = {
