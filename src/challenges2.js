@@ -1,13 +1,12 @@
 // Desafio 11
 function generatePhoneNumber(arrayphone) {
   // seu código aqui
-  let phonenumber = arrayphone.slice(2 , 11);
+  let phonenumber = arrayphone.slice(2, 11);
   let phonenumber1 = phonenumber.splice(5, 0, '-');
   let phonenumber2 = phonenumber.unshift(arrayphone[0], arrayphone[1]);
   let phonenumber3 = phonenumber.unshift('(');
-  let phonenumber4 = phonenumber.splice(3, 0, ')');
-  let phonenumber5 = phonenumber.splice(4, 0, '');
-  let phonenumber6 = phonenumber.join('');
+  let phonenumber4 = phonenumber.splice(3, 0, ') ');
+  let phonenumber5 = phonenumber.join('');
   let repnumber = 0;
   if (arrayphone.length !== 11) {
     return 'Array com tamanho incorreto.';
@@ -20,8 +19,8 @@ function generatePhoneNumber(arrayphone) {
       if (repnumber >= 3) {
         return 'não é possível gerar um número de telefone com esses valores';
       }
-    } //aqui adicionarei o código para phone
-  } return phonenumber6;
+    } // aqui adicionarei o código para phone
+  } return phonenumber5;
 }
 
 // Desafio 12
