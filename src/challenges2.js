@@ -38,8 +38,17 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 // Desafio 13
-function hydrate() {
+function hydrate(drinkString) {
   // seu código aqui
+  drinkString1 = /\d+/g;
+  drinkString2 = drinkString.match(drinkString1);
+  drinkString3 = Array.from(drinkString2);
+  drinkString4 = drinkString3.reduce(function (acumulador, valorAtual) {
+    return acumulador + valorAtual;
+  }, );
+  if (drinkString3.length > 1) {
+    return `${drinkString4} copos de água`;
+  } return `${drinkString4} copo de água`;
 }
 
 module.exports = {
