@@ -14,11 +14,11 @@ function generatePhoneNumber(arrayphone) {
     if (arrayphone[index] > 9 || arrayphone[index] < 0) {
       return 'não é possível gerar um número de telefone com esses valores';
     }
-    if (let index of arrayphone) {
+    if (arrayphone.indexOf(arrayphone[index]) !== index) {
       repnumber += 1;
       if (repnumber >= 3) {
         return 'não é possível gerar um número de telefone com esses valores';
-      }
+      } 
     } // aqui adicionarei o código para phone
   } return phonenumber5;
 }
