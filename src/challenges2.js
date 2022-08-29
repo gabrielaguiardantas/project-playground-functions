@@ -8,6 +8,7 @@ function generatePhoneNumber(arrayphone) {
   let phonenumber4 = phonenumber.splice(3, 0, ') ');
   let phonenumber5 = phonenumber.join('');
   let repnumber = 0;
+  
   if (arrayphone.length !== 11) {
     return 'Array com tamanho incorreto.';
   } for (let index = 0; index < arrayphone.length; index += 1) {
