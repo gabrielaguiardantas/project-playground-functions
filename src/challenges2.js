@@ -14,7 +14,7 @@ function generatePhoneNumber(arrayphone) {
     if (arrayphone[index] > 9 || arrayphone[index] < 0) {
       return 'não é possível gerar um número de telefone com esses valores';
     }
-    if (arrayphone.indexOf(arrayphone[index]) !== index) {
+    if (let index of arrayphone) {
       repnumber += 1;
       if (repnumber >= 3) {
         return 'não é possível gerar um número de telefone com esses valores';
@@ -40,15 +40,15 @@ function triangleCheck(lineA, lineB, lineC) {
 // Desafio 13
 function hydrate(drinkString) {
   // seu código aqui
-  drinkString1 = /\d+/g;
-  drinkString2 = drinkString.match(drinkString1);
-  drinkString3 = Array.from(drinkString2);
-  drinkString4 = drinkString3.reduce(function (acumulador, valorAtual) {
-    return acumulador + valorAtual;
-  }, );
-  if (drinkString3.length > 1) {
-    return `${drinkString4} copos de água`;
-  } return `${drinkString4} copo de água`;
+  let drinkString1 = /\d+/g;
+  let drinkString2 = drinkString.match(drinkString1);
+  function getSum(total, num) {
+    return Number(total) + Number(num);
+  }
+  let drinkString3 = drinkString2.reduce(getSum, 0);
+  if (drinkString3 > 1) {
+    return `${drinkString3} copos de água`;
+  } return `${drinkString3} copo de água`;
 }
 
 module.exports = {
