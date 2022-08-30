@@ -7,21 +7,23 @@ function generatePhoneNumber(arrayphone) {
   let phonenumber3 = phonenumber.unshift('(');
   let phonenumber4 = phonenumber.splice(3, 0, ') ');
   let phonenumber5 = phonenumber.join('');
-  let repnumber = 0;
-  
   if (arrayphone.length !== 11) {
     return 'Array com tamanho incorreto.';
   } for (let index = 0; index < arrayphone.length; index += 1) {
+    let repnumber = 0;
     if (arrayphone[index] > 9 || arrayphone[index] < 0) {
       return 'não é possível gerar um número de telefone com esses valores';
+    } {
+      for (let index2 = 0; index2 < arrayphone.length; index2 += 1) {
+        if (arrayphone[index2] === arrayphone[index]) {
+          repnumber += 1;
+          if (repnumber >= 3) {
+            return 'não é possível gerar um número de telefone com esses valores';
+          }
+        }
+      }
     }
-    if (arrayphone.indexOf(arrayphone[index]) !== index) {
-      repnumber += 1;
-      if (repnumber >= 3) {
-        return 'não é possível gerar um número de telefone com esses valores';
-      } 
-    } // aqui adicionarei o código para phone
-  } return phonenumber5;
+  } return phonenumber5; // aqui adicionarei o código para phone
 }
 
 // Desafio 12
