@@ -23,7 +23,7 @@ function generatePhoneNumber(arrayphone) {
         }
       }
     }
-  } return phonenumber5; // aqui adicionarei o código para phone
+  } return phonenumber5;
 }
 
 // Desafio 12
