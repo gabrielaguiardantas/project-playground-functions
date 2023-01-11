@@ -1,4 +1,11 @@
-# :construction: README customizado em construção ! :construction:
+# Projeto Lessons Learned #
+
+ Segundo projeto do curso de desenvolvimento web da Trybe. O projeto teve como objetivo o desenvolvimento de funções na linguagem Javascript. 
+
+## Demonstração: ##
+
+
+
 <!-- Olá, Tryber!
 Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
 
