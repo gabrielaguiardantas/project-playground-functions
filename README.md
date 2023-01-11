@@ -1,4 +1,4 @@
-# Projeto Lessons Learned #
+# Projeto Playground Functions #
 
  Segundo projeto do curso de desenvolvimento web da Trybe. O projeto teve como objetivo o desenvolvimento de funções na linguagem Javascript. 
 
