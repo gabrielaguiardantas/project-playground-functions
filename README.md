@@ -8,3 +8,4 @@
 
 ## Features implementadas: ##
 
+![features-project1](https://github.com/gabrielaguiardantas/project-playground-functions/assets/110852595/0ef3c69c-3983-4bdd-9bbe-7d8a89f36f9b)
